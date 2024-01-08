@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background-color: #FF4057; /* Change to valentine color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.company-info h1 {
+    color: #fff;
+}
+
+.team-section {
+    display: flex;
+    flex-direction: column; /* Stack team categories vertically */
+    align-items: center; /* Center-align the team categories */
+    margin: 20px 0;
+}
+
+.team-category {
+    width: 100%; /* Take full width */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the content within team category */
+    position: relative; /* Make the position relative for badge positioning */
+}
+
+.trapezium-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #FF4057; /* Change to valentine color */
+}
+
+.team-category h3 {
+    background-color: #FF4057; /* Change to valentine color */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display:inline-block;
+}
+.founder-horizontal {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.founder {
+    display: inline-block;
+    text-align: center;
+    margin: 100px; /* Adjusted the margin to reduce space between founders */
+}
+.founder img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the image inside a circle */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.founder-position {
+    color: #FF4057; /* Change to valentine color */
+}
+.members-horizontal {
+    display: flex;
+    justify-content: center; /* Center-align members horizontally */
+    flex-wrap: wrap; /* Allow wrapping for multiple lines */
+}
+
+.member {
+    display: inline-block; /* Display members horizontally */
+    text-align: center;
+    margin: 100px; /* Adjust the margin to increase space between members */
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the image inside a circle */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.member-position {
+    color: #FF4057; /* Change to valentine color */
+}
+
+footer {
+    background-color: #FF4057; /* Change to valentine color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .team-category {
+        width: 100%;
+    }
+}
+
